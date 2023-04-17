@@ -50,7 +50,7 @@ export default function Home() {
         />
         <meta
           property="description"
-          content="I am a frontend developer having 4+ years experience in creating   user interfaces that are not only attractive but also functional and accessible, and I also enjoy giving users the best and most seamless experience possible."
+          content="I am a frontend developer having 4+ years experience in creating user interfaces that are not only attractive but also functional and accessible, and I also enjoy giving users the best and most seamless experience possible."
           key="description"
         />
       </Head>
