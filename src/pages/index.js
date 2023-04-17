@@ -44,14 +44,14 @@ export default function Home() {
       <Head>
         <title>Jeet Kacha | Frontend Developer</title>
         <meta
-          property="og:title"
+          property="title"
           content="Jeet Kacha | Frontend Developer"
           key="title"
         />
         <meta
-          property="og:description"
-          content="Jeet Kacha | Frontend Developer"
-          key="I am a frontend developer having 4+ years experience in creating   user interfaces that are not only attractive but also functional and accessible, and I also enjoy giving users the best and most seamless experience possible."
+          property="description"
+          content="I am a frontend developer having 4+ years experience in creating   user interfaces that are not only attractive but also functional and accessible, and I also enjoy giving users the best and most seamless experience possible."
+          key="description"
         />
       </Head>
 
