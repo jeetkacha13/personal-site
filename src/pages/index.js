@@ -7,9 +7,11 @@ import {
   HtmlFill,
   JavascriptFill,
   LinkOut,
+  MobileDevice,
   ReactFill,
   SassFill,
 } from "akar-icons";
+import Porfolio from "@/components/Porfolio";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -17,16 +19,20 @@ function classNames(...classes) {
 
 const skills = [
   {
-    name: "javascript",
-    icon: <JavascriptFill size={18} />,
-  },
-  {
     name: "react",
     icon: <ReactFill size={18} />,
   },
   {
     name: "Angular",
     icon: <AngularFill size={18} />,
+  },
+  {
+    name: "Ionic Angular",
+    icon: <MobileDevice size={18} />,
+  },
+  {
+    name: "javascript",
+    icon: <JavascriptFill size={18} />,
   },
   {
     name: "sass & scss",
@@ -79,16 +85,18 @@ export default function Home() {
                   A Frontend Developer.
                 </h2>
                 <h3 className="text-lg text-[#3C486B] opacity-70">
-                  I create user interfaces that are not only attractive but also
-                  functional and accessible, and I also enjoy giving users the
-                  best and most seamless experience possible.
+                  I am a frontend developer with over 4+ years of dedicated
+                  experience, committed to creating visually appealing, highly
+                  functional, and accessible user interfaces. My passion lies in
+                  delivering exceptional user experiences by seamlessly merging
+                  aesthetics with flawless functionality.
                 </h3>
               </div>
             </div>
             <div className="col-span-12 sm:col-span-3">
               <div className="bg-white sm:min-h-[500px] flex flex-col justify-between">
                 <div className="p-4">
-                  <h4>My Skills</h4>
+                  <h4 className="font-bold">My Skills</h4>
                   <h6 className="text-sm opacity-40">4+ Years of experience</h6>
                 </div>
                 <div className="p-5">
@@ -122,16 +130,13 @@ export default function Home() {
             <div className="col-span-12 sm:col-span-6">
               <div className="bg-white  flex flex-col">
                 <div className="p-4">
-                  <h4>Contact</h4>
+                  <h4 className="font-bold">Contact</h4>
                   <h6 className="text-sm opacity-40">
                     {"Let's Get in touch :)"}
                   </h6>
                 </div>
 
                 <div className="p-4">
-                  <h2 className="text-lg text-[#3C486B] font-semibold font-mono mb-5">
-                    contact@jeetkacha.com
-                  </h2>
                   <a
                     href="mailto:contact@jeetkacha.com"
                     type="button"
@@ -146,19 +151,19 @@ export default function Home() {
             <div className="col-span-12 sm:col-span-6">
               <div className="bg-white  flex flex-col">
                 <div className="p-4">
-                  <h4>My Profiles</h4>
+                  <h4 className="font-bold">Social Profiles</h4>
                   <h6 className="text-sm opacity-40">
-                    {"If you want to have a look."}
+                    {"Let's get connected."}
                   </h6>
                 </div>
-                <div className="p-4">
+                <div className="flex p-4">
                   <a
                     href="https://www.linkedin.com/in/jeet-kacha/"
                     target="_blank"
                     type="button"
                     class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white border border-gray-200 hover:bg-gray-100 hover:text-gray-900-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 flex items-center w-full justify-center"
                   >
-                    <span className="mr-2">Connect on Linkedin</span>
+                    <span className="mr-2">Linkedin</span>
                     <LinkOut size={15} />
                   </a>
                   <a
@@ -167,18 +172,19 @@ export default function Home() {
                     type="button"
                     class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white border border-gray-200 hover:bg-gray-100 hover:text-gray-900-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 flex items-center w-full justify-center"
                   >
-                    <span className="mr-2">See my Github</span>
+                    <span className="mr-2">Github</span>
                     <LinkOut size={15} />
                   </a>
                 </div>
               </div>
             </div>
-            <div className="col-span-12 my-4">
-              <p className="text-sm text-gray-400 p-6 sm:p-0">
-                {
-                  "I know this isn't enough, but will it ever be enough for us developers ? 🙊 We always think that we could do it better every freaking time but what we do is make it work first and and then add sparkles later. ( p.s. v2 is coming soon ✨ )"
-                }
-              </p>
+
+            <div className="col-span-12">
+              <Porfolio />
+            </div>
+
+            <div className="col-span-12">
+              <p className="text-sm text-gray-400 p-10 sm:p-5">Thanks :)</p>
             </div>
           </div>
         </div>
