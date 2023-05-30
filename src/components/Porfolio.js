@@ -44,7 +44,7 @@ function Porfolio() {
   ];
 
   return (
-    <div className="bg-white flex flex-col">
+    <div className="bg-white ">
       <div className="p-4">
         <h4 className="font-bold">Prortfolio</h4>
         <h6 className="text-sm opacity-40 capitalize">
@@ -52,16 +52,18 @@ function Porfolio() {
         </h6>
       </div>
       <div className="p-4">
-        <div class="grid grid-cols-12 gap-10">
+        <div class="grid grid-cols-12 sm:gap-10">
           {projects.map((e, index) => (
             <div className="col-span-12 sm:col-span-4" key={index}>
               <div class="flex flex-col overflow-hidden shadow-sm border border-[#1c223110] min-h-[590px]">
                 <div className=" overflow-hidden">
                   <Image
-                    class="w-full object-contain"
                     src={e.image}
-                    alt="PRS-Dairy"
-                    className="max-w-sm"
+                    alt={e.title}
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    style={{ width: "100%", height: "auto" }} // optional
                   />
                 </div>
                 <div class="px-6 py-4">
