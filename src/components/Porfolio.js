@@ -4,6 +4,7 @@ import prsImage from "../../public/images/prs-dairy.png";
 import dmsImage from "../../public/images/dms.png";
 import dzoneImage from "../../public/images/dzone.png";
 import sarvaImage from "../../public/images/sarva.png";
+import tellaImage from "../../public/images/tella.png";
 import Image from "next/image";
 
 function Porfolio() {
@@ -20,7 +21,7 @@ function Porfolio() {
       title: "PRS Dairy",
       image: prsImage,
       description:
-        "PRS Dairy ERP is a tailor-made ERP software designed specifically for PRS Dairy, This software seamlessly integrates all essential functionalities related to the supply chain and billing processes. As part of my contribution, I have developed the frontend components for both the web application and mobile application",
+        "PRS Dairy ERP is a tailor-made ERP software, This software seamlessly integrates all essential functionalities related to the supply chain and billing processes. As part of my contribution, I have developed the frontend components for both the web application and mobile application",
       tech: ["Angular", "Ionic", "Cordova"],
       link: "https://www.dev-app.prsdairy.in/",
     },
@@ -41,6 +42,15 @@ function Porfolio() {
       tech: ["Ionic", "Angular", "OneSignal"],
       link: "https://play.google.com/store/apps/details?id=com.abi.sarva",
     },
+    {
+      title: "Tella E-Learning",
+      image: tellaImage,
+      description:
+        "I have designed and developed e-learning website for Tella E-Learning App in NEXT.Js, Which is server side rendered website. I have also integrated Zoom SDK into the website so that students can join live classes from website itself.",
+
+      tech: ["NextJS", "Zoom SDK", "React"],
+      link: "https://www.tellaclasses.com/",
+    },
   ];
 
   return (
@@ -52,20 +62,24 @@ function Porfolio() {
         </h6>
       </div>
       <div className="p-4">
-        <div class="grid grid-cols-12 sm:gap-10">
+        <div class="grid grid-cols-12 sm:gap-5">
           {projects.map((e, index) => (
-            <div className="col-span-12 sm:col-span-4" key={index}>
-              <div class="flex flex-col overflow-hidden shadow-sm border border-[#1c223110] min-h-[590px]">
-                <div className=" overflow-hidden">
+            <div className="col-span-12 sm:col-span-6 mb-6" key={index}>
+              <div class="flex  overflow-hidden shadow-sm border border-gray-200 h-full">
+                {/* <div className="overflow-hidden hidden sm:block">
                   <Image
                     src={e.image}
                     alt={e.title}
                     width={0}
                     height={0}
                     sizes="100vw"
-                    style={{ width: "100%", height: "auto" }} // optional
+                    style={{
+                      width: 600,
+                      height: "100%",
+                      objectFit: "cover",
+                    }} // optional
                   />
-                </div>
+                </div> */}
                 <div class="px-6 py-4">
                   <div className="flex justify-between items-center">
                     <div class="font-medium text-lg mb-2">{e.title}</div>
@@ -74,17 +88,20 @@ function Porfolio() {
                     </a>
                   </div>
 
-                  <p class="text-gray-700 text-[14px] my-2">{e.description}</p>
-                </div>
-                <div class="px-6 pb-2 mt-auto">
-                  {e.tech.map((e, index) => (
-                    <span
-                      key={index}
-                      class="inline-block bg-gray-200 rounded-full px-3 py-1 text-[12px] font-medium text-gray-700 mr-2 mb-2"
-                    >
-                      {e}
-                    </span>
-                  ))}
+                  <p class="text-gray-500 text-[14px] sm:min-h-[130px] my-5">
+                    {e.description}
+                  </p>
+
+                  <div class="pb-2 mt-auto">
+                    {e.tech.map((e, index) => (
+                      <span
+                        key={index}
+                        class="inline-block bg-gray-200 rounded-full px-3 py-1 text-[12px] font-medium text-gray-700 mr-2 mb-2"
+                      >
+                        {e}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>

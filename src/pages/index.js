@@ -74,7 +74,7 @@ export default function Home() {
         </header>
 
         <div className="w-full sm:px-0">
-          <div class="grid grid-cols-12 gap-3 mt-3">
+          <div className="grid grid-cols-12 gap-3 mt-3">
             <div className="col-span-12 sm:col-span-9">
               <div className="bg-white p-8 sm:p-10 min-h-[500px] flex flex-col  justify-center">
                 <p className="italic"> Hello 👋.</p>
@@ -121,7 +121,7 @@ export default function Home() {
                     href="https://drive.google.com/file/d/1hKJcMPmPEaJXLVKP4qJl8LOLhdJHPaOj/view"
                     target="_blank"
                     type="button"
-                    class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white border border-gray-200 hover:bg-gray-100 hover:text-gray-900-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 flex items-center w-full justify-center"
+                    className="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white border border-gray-200 hover:bg-gray-100 hover:text-gray-900-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 flex items-center w-full justify-center"
                   >
                     <span className="mr-2">Download Resume</span>
                     <Download size={15} />
@@ -142,7 +142,7 @@ export default function Home() {
                   <a
                     href="mailto:contact@jeetkacha.com"
                     type="button"
-                    class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white border border-gray-200 hover:bg-gray-100 hover:text-gray-900-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 flex items-center w-full justify-center"
+                    className="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white border border-gray-200 hover:bg-gray-100 hover:text-gray-900-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 flex items-center w-full justify-center"
                   >
                     <span className="mr-2">Send me a message</span>
                     <Envelope size={15} />
@@ -163,7 +163,7 @@ export default function Home() {
                     href="https://www.linkedin.com/in/jeet-kacha/"
                     target="_blank"
                     type="button"
-                    class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white border border-gray-200 hover:bg-gray-100 hover:text-gray-900-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 flex items-center w-full justify-center"
+                    className="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white border border-gray-200 hover:bg-gray-100 hover:text-gray-900-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 flex items-center w-full justify-center"
                   >
                     <span className="mr-2">Linkedin</span>
                     <LinkOut size={15} />
@@ -172,7 +172,7 @@ export default function Home() {
                     href="https://github.com/jeetkacha13"
                     target="_blank"
                     type="button"
-                    class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white border border-gray-200 hover:bg-gray-100 hover:text-gray-900-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 flex items-center w-full justify-center"
+                    className="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white border border-gray-200 hover:bg-gray-100 hover:text-gray-900-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 flex items-center w-full justify-center"
                   >
                     <span className="mr-2">Github</span>
                     <LinkOut size={15} />
