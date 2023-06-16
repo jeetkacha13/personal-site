@@ -82,7 +82,7 @@ function Porfolio() {
                 </div> */}
                 <div class="px-6 py-4">
                   <div className="flex justify-between items-center">
-                    <div class="font-medium text-lg mb-2">{e.title}</div>
+                    <div class="font-medium text-lg my-2">{e.title}</div>
                     <a href={e.link} target="_blank">
                       <LinkOut size={15} />
                     </a>
