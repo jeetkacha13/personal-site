@@ -186,7 +186,7 @@ export default function Home() {
             </div>
 
             <div className="col-span-12">
-              <p className="text-sm text-gray-400 p-10 sm:p-5">Thanks :)</p>
+              <p className="text-sm text-gray-400 p-10 sm:p-5"></p>
             </div>
           </div>
         </div>

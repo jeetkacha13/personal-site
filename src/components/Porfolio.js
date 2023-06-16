@@ -88,7 +88,7 @@ function Porfolio() {
                     </a>
                   </div>
 
-                  <p class="text-gray-500 text-[14px] sm:min-h-[130px] my-5">
+                  <p class="text-gray-500 text-[14px] min-h-[130px] my-5">
                     {e.description}
                   </p>
 
